@@ -2,28 +2,26 @@ import { Icons } from "@/components/icons";
 import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
+  name: "Amisha Sao",
+  initials: "AS",
   url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  location: "Austin, TX",
+  locationLink: "https://www.google.com/maps/place/austin",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Machine Learning Researcher and Computer Science Student. Passionate about innovation in soft robotics and generative AI. Always exploring new opportunities and sharing insights. Connect with me on LinkedIn and GitHub!",
   summary:
     "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
-  avatarUrl: "/me.png",
+  avatarUrl: "/LinkedIn2.jpg",
   skills: [
     "React",
     "Next.js",
     "Typescript",
-    "Node.js",
     "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
     "Java",
-    "C++",
+    "HTML/CSS",
+    "Javascript",
+    "React Native",
+    "MATLAB",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -32,39 +30,37 @@ export const DATA = {
     { href: "#", icon: PencilLine, label: "Notes" },
   ],
   contact: {
-    email: "hello@example.com",
+    email: "asao6@gatech.edu",
     tel: "+123456789",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/amishasao",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/amisha-sao-384b71256/",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "#",
         icon: Icons.x,
-
-        navbar: true,
       },
       Youtube: {
         name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
+        url: "https://youtube.com",
         icon: Icons.youtube,
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mintysao@gmail.com",
         icon: Icons.email,
 
         navbar: false,
@@ -148,36 +144,20 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Buildspace",
-      href: "https://buildspace.so",
-      degree: "s3, s4, sf1, s5",
-      logoUrl: "/buildspace.jpg",
-      start: "2023",
+      school: "Georgia Institute of Technology",
+      href: "https://www.gatech.edu/",
+      degree: "Bachelor's Degree in Computer Science (BS)",
+      logoUrl: "/georgiatech.png",
+      start: "2024",
+      end: "2027",
+    },
+    {
+      school: "Round Rock High School",
+      href: "https://rrhs.roundrockisd.org/",
+      degree: "High School Diploma",
+      logoUrl: "/rrhs.png",
+      start: "2020",
       end: "2024",
-    },
-    {
-      school: "University of Waterloo",
-      href: "https://uwaterloo.ca",
-      degree: "Bachelor's Degree of Computer Science (BCS)",
-      logoUrl: "/waterloo.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "Wilfrid Laurier University",
-      href: "https://wlu.ca",
-      degree: "Bachelor's Degree of Business Administration (BBA)",
-      logoUrl: "/laurier.png",
-      start: "2016",
-      end: "2021",
-    },
-    {
-      school: "International Baccalaureate",
-      href: "https://ibo.org",
-      degree: "IB Diploma",
-      logoUrl: "/ib.png",
-      start: "2012",
-      end: "2016",
     },
   ],
   projects: [
