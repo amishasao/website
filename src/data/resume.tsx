@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { url } from "inspector";
 import { CodeIcon, HomeIcon, NotebookIcon, PencilLine } from "lucide-react";
 
 export const DATA = {
@@ -114,60 +115,63 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
+      title: "Robosense",
+      href: "https://projectboard.world/isef/project/ebed009-robosense",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Created a robotic rehabilitation glove using an Arduino, FSR pressure sensors, and servo motors, and deployed onto Arduino Nano microcontroller using C. Used Python libraries (such as pandas and Matplotlib) to create real time pressure and angle data charts over time.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Arduino",
+        "Python",
+        "MATLAB",
+        "Machine Learning",
+        "LaTeX",
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
+          href: "https://projectboard.world/isef/project/ebed009-robosense",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "https://github.com/amishasao/RoboSense",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Paper",
+          href: "https://ieeexplore.ieee.org/document/10535001",
+          icon: <Icons.googleDrive className="size-3" />,
+        },
       ],
-      image: "",
+      url: "/glove.jpg",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "C:MintyPersonal ProjectsPersonal Websitewebsitepublic\robosense.mp4",
     },
     {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      title: "Educational Website Research",
+      href: "https://amishasao.github.io/hci-research-user-testing/",
+      dates: "Aug 2023 - May 2024",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
+        "Designed a study to determine the effects of educational website design on high school student questionnaire-based learning, and received over 40 form responses. Developed a user testing website using React.js, Vite.js, and React Bootstrap and deployed project on GitHub pages. Wrote a research paper, documenting the important aspects of the research process using LaTeX.",
+      technologies: ["Typescript", "Bootstrap", "TailwindCSS", "LaTeX"],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "https://amishasao.github.io/hci-research-user-testing/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
           href: "https://github.com/magicuidesign/magicui",
           icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Paper",
+          href: "https://drive.google.com/file/d/1uZGHmMy-lPIal55efTwuqo_eHZyuxg2n/view?usp=sharing",
+          icon: <Icons.googleDrive className="size-3" />,
         },
       ],
       image: "",
