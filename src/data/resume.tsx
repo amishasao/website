@@ -156,7 +156,13 @@ export const DATA = {
       active: true,
       description:
         "Designed a study to determine the effects of educational website design on high school student questionnaire-based learning, and received over 40 form responses. Developed a user testing website using React.js, Vite.js, and React Bootstrap and deployed project on GitHub pages. Wrote a research paper, documenting the important aspects of the research process using LaTeX.",
-      technologies: ["Typescript", "Bootstrap", "TailwindCSS", "LaTeX"],
+      technologies: [
+        "Typescript",
+        "Bootstrap",
+        "TailwindCSS",
+        "Vite.js",
+        "LaTeX",
+      ],
       links: [
         {
           type: "Website",
@@ -178,32 +184,23 @@ export const DATA = {
       video: "https://cdn.magicui.design/bento-grid.mp4",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      title: "Scan Desu Ne",
+      href: "https://github.com/amishasao/Scan-Desu-Ne",
+      dates: "July 2024 - Current",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Developing a document scanning tool that has AI that can scan and summarize documents. Utilizing Python for scanning, Llama 3 model for data chunking and chatting, and React Native for a user interface.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
+        "React Native",
         "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
         "Stripe",
-        "Cloudflare Workers",
+        "React Bootstrap",
+        "Python",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/amishasao/Scan-Desu-Ne",
           icon: <Icons.github className="size-3" />,
         },
       ],
