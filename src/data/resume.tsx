@@ -152,9 +152,9 @@ export const DATA = {
           icon: <Icons.googleDrive className="size-3" />,
         },
       ],
-      url: "/glove.jpg",
+      image: "",
       video:
-        "C:MintyPersonal ProjectsPersonal Websitewebsitepublic\robosense.mp4",
+        "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
     },
     {
       title: "Educational Website Research",
@@ -188,7 +188,8 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video:
+        "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
     },
     {
       title: "Scan Desu Ne",
@@ -212,7 +213,8 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      video:
+        "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
     },
     {
       title: "TouchingGrass",
@@ -231,7 +233,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+        "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
     },
   ],
   hackathons: [
