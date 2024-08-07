@@ -48,13 +48,6 @@ export const DATA = {
 
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "#",
-        icon: Icons.x,
-
-        navbar: true,
-      },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/amisha-sao-384b71256/",
@@ -66,6 +59,8 @@ export const DATA = {
         name: "X",
         url: "#",
         icon: Icons.x,
+
+        navbar: true,
       },
       Youtube: {
         name: "Youtube",
