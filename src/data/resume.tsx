@@ -30,6 +30,15 @@ export const DATA = {
     "Javascript",
     "React Native",
     "MATLAB",
+    "MongoDB",
+    "LaTeX",
+    "Machine Learning",
+    "Generative AI",
+    "HCI",
+    "UI/UX Design",
+    "Figma",
+    "Git",
+    "Arduino",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -240,6 +249,68 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "HackGT 11",
+      dates: "September 27th - 29th, 2024",
+      location: "Atlanta, Georgia",
+      description:
+        "Created MedEase: AI-Assisted Diagnostic Workflow, a web app that allows doctors to effortlessly upload (and access existing) pdf files, which will then be fed to a Retrieval-Augmented Generation Large Language Model (RAG-LLM), producing a differential diagnosis along with important relevant medical information that can be directly input into an Electronic Health Record (EHR) system. Implemented MongoDB to store user information, a Retreival Augmented Generation vector database, and PDF storage. Won Best Use of MongoDB!",
+      image: "/hackgt.png",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [
+        {
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/1129Chengyuan/EMR-Automatic",
+        },
+        {
+          title: "Slides",
+          icon: <Icons.googleDrive className="h-4 w-4" />,
+          href: "https://docs.google.com/presentation/d/1hA0bs-OQc87yaPZexGPD_frk19eKW3RXsY7Ab57O6TA/edit?usp=sharing",
+        },
+        {
+          title: "Devpost",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://devpost.com/software/medease-ai-assisted-diagnostic-workflow",
+        },
+        {
+          title: "Video Demo",
+          icon: <Icons.youtube className="h-4 w-4" />,
+          href: "https://www.youtube.com/watch?v=2s-sg1melAo",
+        },
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://med-ease.co/",
+        },
+      ],
+    },
+    {
+      title: "HackMIT",
+      dates: "September 14th - 15th, 2024",
+      location: "Cambridge, Massachusetts",
+      description:
+        "Developed Turtle Tutor, an AI-integrated tutoring web app using ReactJS, PyFlask, and OpenAI models, which allowed students to tutor an AI to learn concepts.",
+      image: "/hackmit.jpg",
+      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
+      links: [
+        {
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/LeoneVi/HackMIT24",
+        },
+        {
+          title: "Slides",
+          icon: <Icons.googleDrive className="h-4 w-4" />,
+          href: "https://slidesgo.com/editor/share/9d043947-4182-49de-97b3-b97e59463940?embed=0&expires=1728746644&signature=bfae7adb980a576f6433b97ad6e1f1c8a003b3789f2f25b447fd80d8b4f362b0#rs=link",
+        },
+        {
+          title: "Ballot",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://ballot.hackmit.org/project/dqdxe-jccgd-gxldb-shnhd",
+        },
+      ],
+    },
+    {
       title: "Outernet",
       dates: "July 28th - 31st, 2023",
       location: "Cabot, Vermont",
@@ -329,7 +400,7 @@ export const DATA = {
       dates: "June 5th - 6th, 2021",
       location: "Online",
       description:
-        "Developed a website that demonstrated the workflow of college students teaching high school students programming as an internship opportunity supervised by tech companies.",
+        "Developed a website that demonstrated the workflow of college students teaching high school students programming as an internship opportunity supervised by tech companies. Won Best Entrepreneurial Hack!",
       image:
         "https://d112y698adiu2z.cloudfront.net/photos/production/challenge_thumbnails/001/527/351/datas/medium_square.png",
       win: "Best Entrepreneurial Hack",
