@@ -96,7 +96,7 @@ export const DATA = {
       title: "Signal and Information Sciences Laboratory Apprentice",
       logoUrl: "/arl.png",
       start: "June 2024",
-      end: "Current",
+      end: "August 2024",
       description:
         "Generative AI is rapidly changing how workforces operate, including at research labs such as ARL:UT. This project is focused on exploring use-cases of Generative AI tooling--such as self-hosted large language models--to enhance productivity, while taking into account practical constraints based on available computing resources and data security. The goal of this work is to build working prototypes for selected use-cases along with an assessment of best practices for their dissemination and use.",
     },
