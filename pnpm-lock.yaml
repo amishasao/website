@@ -29,6 +29,9 @@ importers:
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
+      dig:
+        specifier: ^0.0.6
+        version: 0.0.6
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -870,6 +873,9 @@ packages:
 
   didyoumean@1.2.2:
     resolution: {integrity: sha512-gxtyfqMg7GKyhQmb056K7M3xszy/myH8w+B4RT+QXBQsvAOdc3XymqDDPHx1BgPgsdAA5SIifona89YtRATDzw==}
+
+  dig@0.0.6:
+    resolution: {integrity: sha512-2XEyWB7QmgXjv4jxkGUWdFy5sykxrgxPq2DR/rDBu/vTbzPRkhq4mLUzubhEDvi+1SQBOw8WrCrccWVU+pTSKA==}
 
   dir-glob@3.0.1:
     resolution: {integrity: sha512-WkrWp9GR4KXfKGYzOLmTuGVi1UWFfws377n9cc55/tb6DuqyF6pcQ5AbiHEshaDpY9v6oaSr2XCDidGmMwdzIA==}
@@ -3076,6 +3082,8 @@ snapshots:
       dequal: 2.0.3
 
   didyoumean@1.2.2: {}
+
+  dig@0.0.6: {}
 
   dir-glob@3.0.1:
     dependencies:
