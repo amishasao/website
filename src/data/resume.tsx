@@ -48,7 +48,6 @@ export const DATA = {
   ],
   contact: {
     email: "asao6@gatech.edu",
-    tel: "+123456789",
     social: {
       GitHub: {
         name: "GitHub",
@@ -163,9 +162,9 @@ export const DATA = {
           icon: <Icons.googleDrive className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
+      image: "/robotic_glove.jpg",
+      // video:
+      //   "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
     },
     {
       title: "Educational Website Research",
@@ -198,34 +197,40 @@ export const DATA = {
           icon: <Icons.googleDrive className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
+      image: "/hci_user_testing.png",
+      // video:
+      //   "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
     },
     {
-      title: "Scan Desu Ne",
+      title: "MedEase: AI-Assisted Diagnostic Workflow",
       href: "https://github.com/amishasao/Scan-Desu-Ne",
-      dates: "July 2024 - Current",
+      dates: "September - October 2024",
       active: true,
       description:
-        "Developing a document scanning tool that has AI that can scan and summarize documents. Utilizing Python for scanning, Llama 3 model for data chunking and chatting, and React Native for a user interface.",
+        "Built a website for doctors to securely upload and access PDFs, which are processed by a Retrieval-Augmented Generation Large Language Model (RAG-LLM) to generate differential diagnoses and key medical details for Electronic Health Records (EHRs). Our platform includes secure login, fast access to uploaded PDFs, and uses MongoDB for user data, RAG vector storage, and PDF management.",
       technologies: [
-        "React Native",
-        "TailwindCSS",
-        "Stripe",
-        "React Bootstrap",
-        "Python",
+        "React",
+        "Astro",
+        "TypeScript",
+        "Flask",
+        "Next.js",
+        "MongoDB Atlas",
       ],
       links: [
         {
           type: "Source",
-          href: "https://github.com/amishasao/Scan-Desu-Ne",
+          href: "https://github.com/1129Chengyuan/EMR-Automatic",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Devpost",
+          href: "https://devpost.com/software/medease-ai-assisted-diagnostic-workflow",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
-      image: "",
-      video:
-        "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
+      image: "/medease.png",
+      // video:
+      //   "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
     },
     {
       title: "TouchingGrass",
@@ -242,9 +247,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
+      image: "/TouchingGrass.jpg",
+      // video: "",
     },
   ],
   hackathons: [
