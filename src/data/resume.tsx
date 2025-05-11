@@ -253,6 +253,21 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "HackGTeeny 2025",
+      dates: "March 1st, 2025",
+      location: "Atlanta, Georgia",
+      description:
+        "First hackathon I helped organize as a part of HexLabs! HackGTeeny is a series of one-hour workshops for first & second year students eager to learn key computer science concepts, with a special focus on skills useful for hackathons.",
+      image: "/hackgteeny.png",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://teeny.hack.gt/",
+        },
+      ],
+    },
+    {
       title: "HackGT 11",
       dates: "September 27th - 29th, 2024",
       location: "Atlanta, Georgia",
