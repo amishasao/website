@@ -88,6 +88,18 @@ export const DATA = {
 
   work: [
     {
+      company: "GT Open Source Program Office",
+      href: "https://ospo.cc.gatech.edu/vsip/",
+      badges: [],
+      location: "Remote",
+      title: "Open Source Software Development Engineer",
+      logoUrl: "/gtospo.png",
+      start: "May 2025",
+      end: "Current",
+      description:
+        "Working on Cybershuttle as a part of Apache Airavata. Cybershuttle is a research computing platform powered by Apache Airavata, designed to streamline access to High-Performance Computing (HPC), cloud computing, and containerized environments for researchers.",
+    },
+    {
       company: "UT Applied Research Labs",
       href: "https://www.arlut.utexas.edu/",
       badges: [],
