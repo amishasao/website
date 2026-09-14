@@ -269,7 +269,7 @@ export const DATA = {
       dates: "April 10th - 11th, 2026",
       location: "Atlanta, Georgia",
       description:
-        "SproutGT is a start-up pitch-a-thon and design-a-thon. We recruited ",
+        "SproutGT is a start-up pitch-a-thon and design-a-thon. Over 250 Georgia Tech students participated, and ",
       image: "/sproutgt.png",
       links: [
         {
