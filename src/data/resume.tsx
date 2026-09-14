@@ -265,6 +265,46 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "SproutGT",
+      dates: "April 10th - 11th, 2026",
+      location: "Atlanta, Georgia",
+      description:
+        "SproutGT is a start-up pitch-a-thon and design-a-thon. We recruited ",
+      image: "/sproutgt.png",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://sprout.hack.gt/",
+        },
+        {
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/HackGT/sproutgt2026-website",
+        },
+      ],
+    },
+    {
+      title: "HackGT 12",
+      dates: "September 26th - 28th, 2025",
+      location: "Atlanta, Georgia",
+      description:
+        "HackGT 12 was a 3-day hackathon that I helped organize as a part of HexLabs! HackGT 12 was Georgia Tech's largest student-run hackathon to date, with over 1200 participants. I worked on the Tech Team to ensure that all aspects of the hackathon ran smoothly. From registration to judging platforms, all of the technology we used was made and maintained in house.",
+      image: "/hackgt12.png",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://2025.hack.gt/",
+        },
+        {
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/HackGT/hackgt12-website",
+        },
+      ],
+    },
+    {
       title: "HackGTeeny 2025",
       dates: "March 1st, 2025",
       location: "Atlanta, Georgia",
