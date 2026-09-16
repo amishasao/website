@@ -12,38 +12,47 @@ import { title } from "process";
 export const DATA = {
   name: "Amisha Sao",
   initials: "AS",
-  url: "https://dillion.io",
+  url: "https://hi-amisha.vercel.app",
   location: "Austin, TX",
   locationLink: "https://www.google.com/maps/place/austin",
   description:
-    "Machine Learning Researcher & Computer Science Student. Passionate about innovation in soft robotics and generative AI. I'm always exploring new opportunities and sharing insights. Connect with me on LinkedIn and GitHub!",
+    "Software Engineer turned Product Designer, currently interning as a Software Engineer at Adobe. I build practical, technical products that empower people to tell their own stories. I'm pivoting toward design engineering, bridging the gap between design and code. Connect with me on LinkedIn and GitHub!",
   summary:
-    "In the summer of 2023, I shifted my focus from embedded systems to machine learning and artificial intelligence, while continuing my work to improve technology accessibility. My journey has been shaped by notable achievements such as being named a US Presidential Scholar in 2024 and publishing a paper in IEEE Xplore. I have participated in unique educational experiences, including Sewa International's Design to Lead program, where I worked with Dr. Anurag Mairal, and projects like creating a robotic rehab glove and developing an LSTM neural network for patient movement prediction.\n\nMy professional experience includes a role as a Research Apprentice at UT Austin’s Applied Research Laboratories, where I developed Python scripts to evaluate machine learning models and worked on projects like an AI Document Scanner App. I have also been actively involved in hackathons, leading projects from marketplace websites to health and habit tracker apps.\n\nFrom creating the first in-person hackathon in my city to engaging with experts in the field, I am driven to grow in the niche academic field of Human-Computer Interaction (HCI). In the future, I aim to be an HCI researcher, refining technology and broadening its connection with humanity. Connect with me on LinkedIn and GitHub to explore more about my work and interests!",
+    "I'm a software engineer turned product designer, currently studying Computer Science at Georgia Institute of Technology. I've spent years building technical systems — from open-source research computing tools to AI-powered products. I'm now bringing that same rigor into product design, with the goal of becoming a design engineer: someone who can move fluidly between Figma and code, and who designs with an understanding of what's actually buildable.\n\nRight now, I'm interning at Adobe, where I work closely with designers to implement frontend changes — an experience that's taught me exactly what survives the handoff from design file to production, and sharpened my instinct for where design and engineering decisions actually meet.\n\nMy path here has included some unconventional turns: I was named a US Presidential Scholar in 2024 and published research in IEEE Xplore on neuromuscular robotic rehabilitation. I've also led and organized hackathons at scale — including HackGT 12, Georgia Tech's largest student-run hackathon with over 1,200 participants — and founded the first in-person hackathon in my hometown from scratch.\n\nWhat ties all of this together is the same thread I care about as a design engineer: building products and experiences that are practical, technically sound, and genuinely empower the people who use them to tell their own stories. Connect with me on LinkedIn and GitHub to see more of what I'm working on.",
   avatarUrl: "/LinkedIn2.jpg",
   skills: [
-    "Python",
-    "Java",
-    "React",
-    "Next.js",
-    "Typescript",
-    "HTML/CSS",
-    "Javascript",
-    "React Native",
-    "MATLAB",
-    "MongoDB",
-    "LaTeX",
-    "Machine Learning",
-    "Generative AI",
-    "HCI",
-    "UI/UX Design",
+    // Design
+    "User Research",
+    "Usability Testing",
+    "Competitive Analysis",
+    "Information Architecture",
+
+    // Design Tools
     "Figma",
+    "Adobe Creative Cloud",
+    "Wireframing",
+    "Prototyping",
+    "Component Libraries",
+    "Design Systems",
+
+    // Engineering
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "Python",
+    "Node.js",
+    "HTML/CSS",
     "Git",
-    "Arduino",
+
+    // Other
+    "Generative AI",
+    "MCP Servers",
+    "Agile Development",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "#", icon: CodeIcon, label: "Projects" },
+    { href: "/projects", icon: CodeIcon, label: "Projects" },
     { href: "#", icon: PencilLine, label: "Notes" },
   ],
   contact: {
@@ -58,21 +67,14 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/amisha-sao-384b71256/",
+        url: "https://www.linkedin.com/in/amisha-sao/",
         icon: Icons.linkedin,
-
-        navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "#",
-        icon: Icons.x,
 
         navbar: true,
       },
       Youtube: {
         name: "Youtube",
-        url: "https://youtube.com",
+        url: "https://www.youtube.com/@handmade.by.amisha",
         icon: Icons.youtube,
         navbar: true,
       },
@@ -88,61 +90,129 @@ export const DATA = {
 
   work: [
     {
-      company: "GT Open Source Program Office",
-      href: "https://ospo.cc.gatech.edu/vsip/",
+      company: "HexLabs, Inc.",
+      href: "https://hexlabs.org/",
       badges: [],
-      location: "Remote",
-      title: "Open Source Software Development Engineer",
-      logoUrl: "/gtospo.png",
-      start: "May 2025",
+      location: "Atlanta, Georgia",
+      title: "Design Engineer",
+      logoUrl: "/hexlabs.png",
+      start: "November 2024",
       end: "Current",
       description:
-        "Working on Cybershuttle as a part of Apache Airavata. Cybershuttle is a research computing platform powered by Apache Airavata, designed to streamline access to High-Performance Computing (HPC), cloud computing, and containerized environments for researchers.",
+        "Designing and building scalable web experiences with React and TypeScript for high-traffic hackathon events. Delivered the HackGT 13 website by owning information architecture, mid-to-high fidelity prototyping, and a seaside-market visual concept from initial sketches through launch. Strengthened cross-platform responsiveness to support smooth engagement across large-scale user events.",
     },
     {
-      company: "UT Applied Research Labs",
+      company: "Adobe",
+      href: "https://www.adobe.com/",
+      badges: [],
+      location: "San Jose, California",
+      title: "Software Engineering Intern, Marketo Engage (AI)",
+      logoUrl: "/adobe.png",
+      start: "May 2026",
+      end: "August 2026",
+      description:
+        "Expanded a conversational AI skill in Adobe's Marketo Engage AI tool, enabling enterprise marketers to import and target customer data through natural language across a Python backend and React TypeScript frontend. Hardened the private-beta product ahead of launch by resolving full-stack data-import failures and driving two core backend modules to 100% test coverage. Contributed across Adobe's AI lead-scoring platform through 17 pull requests spanning backend services and the customer-facing Scoring Studio UI, including data-correctness and Adobe Spectrum alignment fixes.",
+    },
+    {
+      company: "GT Open-Source Program Office",
+      href: "https://ospo.cc.gatech.edu/vsip/",
+      badges: [],
+      location: "Atlanta, Georgia",
+      title: "Software Engineering Intern, ARTISAN Project",
+      logoUrl: "/gtospo.png",
+      start: "May 2025",
+      end: "August 2025",
+      description:
+        "Designed and deployed a ReactJS MCP chatbot that increased LLM accessibility within Cybershuttle by 300%. Collaborated with a 25-person developer team to contribute production-ready code to the Apache Foundation.",
+    },
+    {
+      company: "Applied Research Laboratories",
       href: "https://www.arlut.utexas.edu/",
       badges: [],
       location: "Austin, Texas",
-      title: "Signal and Information Sciences Laboratory Apprentice",
+      title: "Research Apprentice",
       logoUrl: "/arl.png",
       start: "June 2024",
       end: "August 2024",
       description:
-        "Generative AI is rapidly changing how workforces operate, including at research labs such as ARL:UT. This project is focused on exploring use-cases of Generative AI tooling--such as self-hosted large language models--to enhance productivity, while taking into account practical constraints based on available computing resources and data security. The goal of this work is to build working prototypes for selected use-cases along with an assessment of best practices for their dissemination and use.",
-    },
-    {
-      company: "Cambridge Centre for International Research",
-      badges: [],
-      href: "https://cambridge-research.org/",
-      location: "London, UK (Remote)",
-      title: "Independent Student Researcher",
-      logoUrl: "/ccir.jpg",
-      start: "June 2023",
-      end: "September 2023",
-      description:
-        "Learned about Bio-Inspired Robotics and the implementations of machine learning in their usage. Worked under Dr. Thomas George Thuruthel to create a Long Short Term Memory (LSTM) recurrent neural network in MATLAB for automated prediction of patient movement during neuromuscular robotic rehabilitation.",
+        "Reduced AI benchmark evaluation time by 50+ hours per week using LlamaIndex and DeepEval, and presented the work to over 40 researchers and members of the public at the end-of-summer symposium.",
     },
   ],
   education: [
     {
       school: "Georgia Institute of Technology",
       href: "https://www.gatech.edu/",
-      degree: "Bachelor's Degree in Computer Science (BS)",
+      degree: "B.S./M.S. in Computer Science with a focus in HCI",
       logoUrl: "/georgiatech.png",
-      start: "2024",
-      end: "2027",
-    },
-    {
-      school: "Round Rock High School",
-      href: "https://rrhs.roundrockisd.org/",
-      degree: "High School Diploma",
-      logoUrl: "/rrhs.png",
-      start: "2020",
-      end: "2024",
+      start: "Aug 2024",
+      end: "May 2028",
     },
   ],
   projects: [
+    {
+      title: "Inner Hues",
+      href: "#",
+      dates: "Jan 2026 - Apr 2026",
+      active: true,
+      description:
+        "A judgment-free digital art space designed to make creative self-care feel more approachable. Led user research through 15 survey responses and 4 interviews, uncovering barriers around time and confidence, choice overload, and fear of judgment. Mapped 5 competitor apps and iterated low-to-mid-fidelity Figma prototypes based on usability testing to improve navigation and guidance clarity.",
+      technologies: [
+        "Figma",
+        "User Research",
+        "Usability Testing",
+        "Competitive Analysis",
+        "Prototyping",
+        "Information Architecture",
+      ],
+      links: [],
+      image: "/inner-hues.png",
+    },
+    {
+      title: "ATTUNE",
+      href: "#",
+      dates: "March 2026",
+      active: true,
+      description:
+        "A real-time conversational awareness app inspired by the Korean concept of nunchi. Designed an experience that translates emotional cues into a live heatmap and quick-insights panel, with privacy-by-design through opt-in, active-session-only voice recording and analysis focused on emotional state rather than transcript content.",
+      technologies: [
+        "Figma",
+        "Product Design",
+        "Interaction Design",
+        "Privacy by Design",
+        "AI",
+      ],
+      links: [],
+      image: "/attune.png",
+    },
+    {
+      title: "MedEase: AI-Assisted Diagnostic Workflow",
+      href: "https://github.com/amishasao/Scan-Desu-Ne",
+      dates: "September - October 2024",
+      active: true,
+      description:
+        "Built an AI-assisted diagnostic workflow that allows doctors to securely upload and access PDFs, which are processed by a Retrieval-Augmented Generation model to generate differential diagnoses and key medical details for electronic health records.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "MongoDB",
+        "Flask",
+        "RAG",
+        "Generative AI",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/1129Chengyuan/EMR-Automatic",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Devpost",
+          href: "https://devpost.com/software/medease-ai-assisted-diagnostic-workflow",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/medease.png",
+    },
     {
       title: "Robosense",
       href: "https://projectboard.world/isef/project/ebed009-robosense",
@@ -213,55 +283,6 @@ export const DATA = {
       // video:
       //   "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
     },
-    {
-      title: "MedEase: AI-Assisted Diagnostic Workflow",
-      href: "https://github.com/amishasao/Scan-Desu-Ne",
-      dates: "September - October 2024",
-      active: true,
-      description:
-        "Built a website for doctors to securely upload and access PDFs, which are processed by a Retrieval-Augmented Generation Large Language Model (RAG-LLM) to generate differential diagnoses and key medical details for Electronic Health Records (EHRs). Our platform includes secure login, fast access to uploaded PDFs, and uses MongoDB for user data, RAG vector storage, and PDF management.",
-      technologies: [
-        "React",
-        "Astro",
-        "TypeScript",
-        "Flask",
-        "Next.js",
-        "MongoDB Atlas",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/1129Chengyuan/EMR-Automatic",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Devpost",
-          href: "https://devpost.com/software/medease-ai-assisted-diagnostic-workflow",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/medease.png",
-      // video:
-      //   "https://drive.google.com/file/d/1NCbcirvq_JSgbozvSGO2aEisYVNlSZDX/view?usp=sharing",
-    },
-    {
-      title: "TouchingGrass",
-      href: "https://github.com/BigTurtle8/mobile-apps-final-project/",
-      dates: "April 2024 - May 2024",
-      active: true,
-      description:
-        "Developed a BeReal app to encourage individuals to go outdoors more often. The app allows users to take, store, and edit pictures using filters (that can be bought) every 24 hours.",
-      technologies: ["React Native", "CSS", "JavaScript"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/BigTurtle8/mobile-apps-final-project/",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/TouchingGrass.jpg",
-      // video: "",
-    },
   ],
   hackathons: [
     {
@@ -269,7 +290,7 @@ export const DATA = {
       dates: "April 10th - 11th, 2026",
       location: "Atlanta, Georgia",
       description:
-        "SproutGT is a start-up pitch-a-thon and design-a-thon. Over 250 Georgia Tech students participated, and ",
+        "Helped organize SproutGT, a start-up pitch-a-thon and design-a-thon hosted by HexLabs for over 250 Georgia Tech students. Worked behind the scenes to plan and build the event experience, supporting both the technical and operational aspects of bringing the event to life.",
       image: "/sproutgt.png",
       links: [
         {
@@ -289,7 +310,7 @@ export const DATA = {
       dates: "September 26th - 28th, 2025",
       location: "Atlanta, Georgia",
       description:
-        "HackGT 12 was a 3-day hackathon that I helped organize as a part of HexLabs! HackGT 12 was Georgia Tech's largest student-run hackathon to date, with over 1200 participants. I worked on the Tech Team to ensure that all aspects of the hackathon ran smoothly. From registration to judging platforms, all of the technology we used was made and maintained in house.",
+        "Helped organize SproutGT, a start-up pitch-a-thon and design-a-thon for over 250 Georgia Tech students. Contributed to the event's digital experience and technical infrastructure while working with the HexLabs team to bring the event from planning to execution.",
       image: "/hackgt12.png",
       links: [
         {
