@@ -151,7 +151,7 @@ export const DATA = {
   projects: [
     {
       title: "Inner Hues",
-      href: "#",
+      href: "https://www.figma.com/deck/HMI3kdMZ9WiTGYcFp7GaxW",
       dates: "Jan 2026 - Apr 2026",
       active: true,
       description:
@@ -169,7 +169,7 @@ export const DATA = {
     },
     {
       title: "ATTUNE",
-      href: "#",
+      href: "https://www.figma.com/design/ZCfR7YM7K8049JRZOArAqJ/Nunchi-Prototype?node-id=56-426",
       dates: "March 2026",
       active: true,
       description:
@@ -184,6 +184,31 @@ export const DATA = {
       links: [],
       image: "/attune.png",
     },
+    {
+      title: "HackGT 13 Website",
+      href: "https://www.figma.com/deck/GyR0cH0kPIuDZaXX7ETj7d/HackGT-13-Website-Project?node-id=13-447",
+      dates: "2026",
+      active: true,
+      description:
+        "Helped design and build the website for HackGT 13, Georgia Tech's premier hackathon, creating an approachable application experience for students from all backgrounds. Owned the information architecture, mid-to-high fidelity prototyping, and seaside-market visual concept from initial sketches through launch, then brought the designs to life as a fully responsive React and TypeScript website.",
+      technologies: [
+        "Figma",
+        "React",
+        "TypeScript",
+        "Information Architecture",
+        "Prototyping",
+        "Responsive Design",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://hack.gt/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/hackgt13website.png",
+    },
+
     {
       title: "MedEase: AI-Assisted Diagnostic Workflow",
       href: "https://github.com/amishasao/Scan-Desu-Ne",
