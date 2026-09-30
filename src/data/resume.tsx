@@ -95,7 +95,7 @@ export const DATA = {
       badges: [],
       location: "Atlanta, Georgia",
       title: "Design Engineer",
-      logoUrl: "/hexlabs.png",
+      logoUrl: "/hexlabs.jpg",
       start: "November 2024",
       end: "Current",
       description:
