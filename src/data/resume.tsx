@@ -314,7 +314,8 @@ export const DATA = {
       title: "HackGT 13",
       dates: "September 25th - 27th, 2026",
       location: "Atlanta, Georgia",
-      description: "",
+      description:
+        "As Tech Team director, I helped organize HackGT 13, Georgia Tech's premier hackathon, creating an approachable application experience for students from all backgrounds. I owned the information architecture, mid-to-high fidelity prototyping, and seaside-market visual concept from initial sketches through launch, then brought the designs to life as a fully responsive React and TypeScript website. I pioneered the creation of a new HexLabs app for the event, which allowed students to view the schedule, workshops, and other event information in a mobile-friendly format.",
       image: "/hackgt13.svg",
       links: [
         {
