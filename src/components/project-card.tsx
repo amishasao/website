@@ -64,6 +64,8 @@ export function ProjectCard({
           <Image
             src={image}
             alt={title}
+            width={500}
+            height={300}
             className="h-40 w-full rounded-t-[calc(var(--radius)-1px)] border-b object-cover object-top"
           />
         )}
