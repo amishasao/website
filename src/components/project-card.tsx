@@ -43,7 +43,7 @@ export function ProjectCard({
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        "flex flex-col overflow-hidden isolate transform-gpu border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
       <Link
@@ -64,7 +64,7 @@ export function ProjectCard({
           <Image
             src={image}
             alt={title}
-            className="h-40 w-full overflow-hidden object-cover object-top"
+            className="h-40 w-full rounded-t-[calc(var(--radius)-1px)] border-b object-cover object-top"
           />
         )}
       </Link>
