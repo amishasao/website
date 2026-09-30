@@ -311,6 +311,25 @@ export const DATA = {
   ],
   hackathons: [
     {
+      title: "HackGT 13",
+      dates: "September 25th - 27th, 2026",
+      location: "Atlanta, Georgia",
+      description: "",
+      image: "/hackgt13.svg",
+      links: [
+        {
+          title: "Website",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://hack.gt/",
+        },
+        {
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/HackGT/hackgt13-website",
+        },
+      ],
+    },
+    {
       title: "SproutGT",
       dates: "April 10th - 11th, 2026",
       location: "Atlanta, Georgia",
