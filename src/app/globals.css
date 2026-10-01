@@ -2,68 +2,88 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * Palette borrowed from the Design Portfolio:
+ *   plum #2d2a31 / charcoal #434047, slate #567087, gold #e6cc8c, cream #faf6ec
+ */
 @layer base {
     :root {
-      --background: 0 0% 100%;
-      --foreground: 210 11.1% 3.53%;
+      --background: 43 58.3% 95.3%;
+      --foreground: 266 5.2% 26.5%;
 
       --card: 0 0% 100%;
-      --card-foreground: 210 11.1% 3.53%;
+      --card-foreground: 266 5.2% 26.5%;
 
-      --popover: 0 0% 100%;
-      --popover-foreground: 210 11.1% 3.53%;
+      --popover: 43 58.3% 95.3%;
+      --popover-foreground: 266 5.2% 26.5%;
 
-      --primary: 0 0% 9%;
-      --primary-foreground: 0 0% 98%;
+      --primary: 208 22.2% 43.3%;
+      --primary-foreground: 43 58.3% 95.3%;
 
-      --secondary: 0 0% 96.1%;
-      --secondary-foreground: 0 0% 9%;
+      --secondary: 43 55% 85%;
+      --secondary-foreground: 266 5.2% 26.5%;
 
-      --muted: 0 0% 96.1%;
-      --muted-foreground: 0 0% 45.1%;
+      --muted: 40 30% 90%;
+      --muted-foreground: 266 5% 40%;
 
-      --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+      --accent: 40 30% 90%;
+      --accent-foreground: 266 5.2% 26.5%;
 
       --destructive: 0 84.2% 60.2%;
       --destructive-foreground: 0 0% 98%;
 
-      --border: 0 0% 89.8%;
-      --input: 0 0% 89.8%;
-      --ring: 0 0% 3.9%;
+      --border: 40 20% 82%;
+      --input: 40 20% 82%;
+      --ring: 208 22.2% 43.3%;
 
-      --radius: 0.5rem;
+      --radius: 1.25rem;
     }
 
     .dark {
-      --background: 210 11.1% 3.53%;
-      --foreground: 0 0% 98%;
+      --background: 266 7.7% 17.8%;
+      --foreground: 43 58.3% 95.3%;
 
-      --card: 210 11.1% 3.53%;
-      --card-foreground: 0 0% 98%;
+      --card: 266 5.2% 26.5%;
+      --card-foreground: 43 58.3% 95.3%;
 
-      --popover: 210 11.1% 3.53%;
-      --popover-foreground: 0 0% 98%;
+      --popover: 266 5.2% 26.5%;
+      --popover-foreground: 43 58.3% 95.3%;
 
-      --primary: 0 0% 98%;
-      --primary-foreground: 0 0% 9%;
+      --primary: 43 64.3% 72.5%;
+      --primary-foreground: 266 7.7% 17.8%;
 
-      --secondary: 0 0% 14.9%;
-      --secondary-foreground: 0 0% 98%;
+      --secondary: 208 22.2% 43.3%;
+      --secondary-foreground: 43 58.3% 95.3%;
 
-      --muted: 0 0% 14.9%;
-      --muted-foreground: 0 0% 63.9%;
+      --muted: 263 5.1% 30.6%;
+      --muted-foreground: 40 15% 72%;
 
-      --accent: 0 0% 14.9%;
-      --accent-foreground: 0 0% 98%;
+      --accent: 263 5.1% 30.6%;
+      --accent-foreground: 43 58.3% 95.3%;
 
       --destructive: 0 62.8% 30.6%;
       --destructive-foreground: 0 0% 98%;
 
-      --border: 0 0% 14.9%;
-      --input: 0 0% 14.9%;
-      --ring: 0 0% 83.1%;
+      --border: 267 5.1% 34.3%;
+      --input: 267 5.1% 34.3%;
+      --ring: 43 64.3% 72.5%;
     }
+  }
+
+  /* Light mode: warm gradient backdrop with frosted-glass cards */
+  html:not(.dark) body {
+    background:
+      radial-gradient(ellipse at 15% 55%, rgba(255, 190, 100, 0.45) 0%, transparent 48%),
+      radial-gradient(ellipse at 82% 18%, rgba(140, 195, 255, 0.5) 0%, transparent 48%),
+      radial-gradient(ellipse at 65% 85%, rgba(200, 145, 255, 0.42) 0%, transparent 48%),
+      linear-gradient(140deg, #f5ede0, #e8f0fa);
+    background-attachment: fixed;
+  }
+
+  html:not(.dark) .bg-card {
+    background-color: hsl(var(--card) / 0.55);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
   }
 
   @layer base {

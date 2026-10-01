@@ -5,7 +5,7 @@ import {
   HomeIcon,
   icons,
   NotebookIcon,
-  PencilLine,
+  Rocket,
 } from "lucide-react";
 import { title } from "process";
 
@@ -52,8 +52,8 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/#", icon: CodeIcon, label: "Projects" },
-    { href: "#", icon: PencilLine, label: "Notes" },
+    { href: "/#projects", icon: CodeIcon, label: "Projects" },
+    { href: "/#hackathons", icon: Rocket, label: "Hackathons" },
   ],
   contact: {
     email: "asao6@gatech.edu",
