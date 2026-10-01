@@ -21,7 +21,7 @@ export default function Page() {
               <BlurFade delay={BLUR_FADE_DELAY} yOffset={8}>
                 <h1 className="font-heading text-3xl font-bold tracking-tight sm:text-5xl xl:text-6xl/none">
                   Hi, I&apos;m{" "}
-                  <span className="text-primary">
+                  <span className="inline-block -rotate-3 px-1 font-display text-[1.2em] font-normal text-primary">
                     {DATA.name.split(" ")[0]}
                   </span>{" "}
                   👋
@@ -116,7 +116,9 @@ export default function Page() {
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+                <Badge key={skill} variant="secondary" className="rounded-full">
+                  {skill}
+                </Badge>
               </BlurFade>
             ))}
           </div>
@@ -193,7 +195,7 @@ export default function Page() {
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+            <ul className="mb-4 ml-4 divide-y divide-dashed border-l-2 border-l-secondary">
               {DATA.hackathons.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}

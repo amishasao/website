@@ -25,6 +25,11 @@ const config = {
         display: ["var(--font-display)", "cursive"],
       },
       colors: {
+        // Fixed Design Portfolio colors that don't change with the theme
+        portfolio: {
+          slate: "#567087",
+          gold: "#e6cc8c",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

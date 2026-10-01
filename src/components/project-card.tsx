@@ -43,7 +43,7 @@ export function ProjectCard({
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden isolate transform-gpu border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        "flex flex-col overflow-hidden isolate transform-gpu border hover:-translate-y-0.5 hover:border-primary hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
       <Link
@@ -87,8 +87,8 @@ export function ProjectCard({
           <div className="mt-2 flex flex-wrap gap-1">
             {tags?.map((tag) => (
               <Badge
-                className="px-1 py-0 text-[10px]"
-                variant="secondary"
+                className="rounded-full px-1.5 py-0 text-[10px] font-normal"
+                variant="outline"
                 key={tag}
               >
                 {tag}
@@ -102,7 +102,7 @@ export function ProjectCard({
           <div className="flex flex-row flex-wrap items-start gap-1">
             {links?.map((link, idx) => (
               <Link href={link?.href} key={idx} target="_blank">
-                <Badge key={idx} className="flex gap-2 px-2 py-1 text-[10px]">
+                <Badge key={idx} className="flex gap-2 rounded-full px-2 py-1 text-[10px]">
                   {link.icon}
                   {link.type}
                 </Badge>
