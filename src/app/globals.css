@@ -162,3 +162,61 @@ code[data-line-numbers-max-digits="2"] > [data-line]::before {
 code[data-line-numbers-max-digits="3"] > [data-line]::before {
   width: 3rem;
 }
+/*
+ * Case study themes, each borrowed from its original presentation deck.
+ * Panels keep the deck's fixed colors; headings get a lighter tone in dark mode.
+ */
+.cs-attune {
+  --cs-heading: #1f2724;
+  --cs-accent: #2f6235;
+  --cs-panel: #e6ece6;
+  --cs-brand: #7ea8b8;
+}
+.dark .cs-attune {
+  --cs-heading: #f2f4ef;
+  --cs-accent: #8fbf96;
+}
+.cs-attune .cs-h2 {
+  font-family: var(--font-raleway), var(--font-sans), sans-serif;
+  font-weight: 700;
+}
+
+.cs-inner-hues {
+  --cs-heading: #2d2a31;
+  --cs-accent: #e8664a;
+  --cs-panel: #f3f1e6;
+  --cs-gradient: radial-gradient(ellipse at 12% 40%, #f39a5b 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 30%, #e86fb0 0%, transparent 55%),
+    radial-gradient(ellipse at 55% 110%, #8f78c9 0%, transparent 60%),
+    linear-gradient(100deg, #9b84c4, #e47bb0 50%, #f0866a);
+}
+.dark .cs-inner-hues {
+  --cs-heading: #faf6ec;
+  --cs-accent: #f59a7f;
+}
+.cs-inner-hues .cs-h2 {
+  font-family: var(--font-instrument), serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  font-size: 2.25rem;
+  line-height: 1.1;
+}
+.cs-inner-hues h1.cs-h2 {
+  font-size: 2.75rem;
+}
+
+.cs-hackgt {
+  --cs-heading: #17575b;
+  --cs-accent: #2f6f86;
+  --cs-panel: #cdeef5;
+  --cs-sand: #efcfa8;
+  --cs-wood: #8a4b24;
+}
+.dark .cs-hackgt {
+  --cs-heading: #a6dfe6;
+}
+.cs-hackgt .cs-h2 {
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}

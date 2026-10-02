@@ -151,7 +151,7 @@ export const DATA = {
   projects: [
     {
       title: "Inner Hues",
-      href: "https://www.figma.com/deck/HMI3kdMZ9WiTGYcFp7GaxW",
+      href: "/blog/inner-hues",
       dates: "Jan 2026 - Apr 2026",
       active: true,
       description:
@@ -169,7 +169,7 @@ export const DATA = {
     },
     {
       title: "ATTUNE",
-      href: "https://www.figma.com/design/ZCfR7YM7K8049JRZOArAqJ/Nunchi-Prototype?node-id=56-426",
+      href: "/blog/attune",
       dates: "March 2026",
       active: true,
       description:
@@ -186,7 +186,7 @@ export const DATA = {
     },
     {
       title: "HackGT 13 Website",
-      href: "https://www.figma.com/deck/GyR0cH0kPIuDZaXX7ETj7d/HackGT-13-Website-Project?node-id=13-447",
+      href: "/blog/hackgt-13",
       dates: "2026",
       active: true,
       description:
