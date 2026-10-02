@@ -9,12 +9,20 @@ import {
   SubHeading,
 } from "@/components/case-study";
 import { fontInstrument } from "@/components/case-study-fonts";
+import { FigmaPhoneEmbed } from "@/components/figma-phone-embed";
 import { getCaseStudy } from "@/data/case-studies";
 import { cn } from "@/lib/utils";
 
 const study = getCaseStudy("inner-hues");
 
 export const metadata = caseStudyMetadata(study);
+
+const PROTOTYPE_URL =
+  "https://www.figma.com/proto/Ge4ia8X6NJRuQho42JlrWy/Case-Study-Ritsu---Amisha?node-id=12114-707&p=f&viewport=439%2C-229%2C0.28&t=TqU2pWOtVrNfzjK7-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=12419%3A542&page-id=1%3A3";
+
+// Figma serves embeddable prototypes from embed.figma.com
+const PROTOTYPE_EMBED_URL =
+  "https://embed.figma.com/proto/Ge4ia8X6NJRuQho42JlrWy/Case-Study-Ritsu---Amisha?node-id=12114-707&starting-point-node-id=12419%3A542&page-id=1%3A3&scaling=scale-down&content-scaling=fixed&embed-host=share&hide-ui=1";
 
 // The deck's section slides: a full gradient wash with an italic serif title
 function Chapter({ title }: { title: string }) {
@@ -445,26 +453,30 @@ export default function InnerHuesPage() {
       />
 
       <Section title="The final prototype">
-        <div className="grid items-center gap-6 sm:grid-cols-[1fr_200px]">
-          <Prose>
-            <p>
-              The final design brings everything together: a short daily
-              activity on the home screen, guidance you can dial up or down,
-              and a gallery that feels like a community rather than a
-              critique. We presented it as a live demo at the end of the
-              bootcamp.
-            </p>
-          </Prose>
-          <div className="mx-auto w-40 overflow-hidden rounded-[2rem] bg-[image:var(--cs-gradient)] p-3 sm:w-full">
-            <Figure
-              src="/case-studies/inner-hues/final-phone.jpg"
-              alt="Inner Hues splash screen with a colorful paint palette logo"
-              width={801}
-              height={1780}
-              sizes="200px"
-              imageClassName="rounded-[1.5rem]"
-            />
-          </div>
+        <Prose>
+          <p>
+            The final design brings everything together: a short daily
+            activity on the home screen, guidance you can dial up or down,
+            and a gallery that feels like a community rather than a critique.
+            We presented it as a live demo at the end of the bootcamp. Tap
+            through it below, or{" "}
+            <a
+              href={PROTOTYPE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline"
+            >
+              open it in Figma
+            </a>
+            .
+          </p>
+        </Prose>
+        <div className="mx-auto w-full max-w-[380px] rounded-[2rem] bg-[image:var(--cs-gradient)] p-2.5">
+          <FigmaPhoneEmbed
+            src={PROTOTYPE_EMBED_URL}
+            title="Inner Hues interactive prototype"
+            className="rounded-[1.5rem] bg-[#fdfbf5]"
+          />
         </div>
       </Section>
 

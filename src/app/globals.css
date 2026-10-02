@@ -168,13 +168,13 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
  */
 .cs-attune {
   --cs-heading: #1f2724;
-  --cs-accent: #2f6235;
-  --cs-panel: #e6ece6;
+  --cs-accent: #7ea8b8;
+  --cs-panel: #e9f0f2;
   --cs-brand: #7ea8b8;
 }
 .dark .cs-attune {
   --cs-heading: #f2f4ef;
-  --cs-accent: #8fbf96;
+  --cs-accent: #9cc3d1;
 }
 .cs-attune .cs-h2 {
   font-family: var(--font-raleway), var(--font-sans), sans-serif;

@@ -16,7 +16,7 @@ const study = getCaseStudy("attune");
 
 export const metadata = caseStudyMetadata(study);
 
-// Mirrors the deck's content slides: white with a dark green rule on top
+// Mirrors the deck's content slides, with a rule in the logotype teal on top
 function Slide({
   className,
   children,
@@ -27,7 +27,7 @@ function Slide({
   return (
     <div
       className={cn(
-        "overflow-hidden rounded-2xl border-t-[6px] border-[#2f6235] bg-[color:var(--cs-panel)]",
+        "overflow-hidden rounded-2xl border-t-[6px] border-[#7ea8b8] bg-[color:var(--cs-panel)]",
         className
       )}
     >
@@ -35,6 +35,20 @@ function Slide({
     </div>
   );
 }
+
+// Section divider in the style of the deck's title slide
+function Chapter({ title }: { title: string }) {
+  return (
+    <div className="flex h-36 items-center justify-center rounded-2xl bg-[#7ea8b8] px-6 sm:h-44">
+      <p className="font-[family-name:var(--font-raleway)] text-4xl tracking-wide text-white sm:text-5xl">
+        {title}
+      </p>
+    </div>
+  );
+}
+
+// Published Figma Make prototype. Leave empty to hide the embed.
+const PROTOTYPE_URL = "https://figure-happy-01428158.figma.site";
 
 export default function AttunePage() {
   return (
@@ -116,7 +130,7 @@ export default function AttunePage() {
           ].map((item, i) => (
             <li key={item.title}>
               <Slide className="h-full p-4">
-                <p className="text-xs text-[#2f6235]/80">0{i + 1}</p>
+                <p className="text-xs text-[#4f7f91]">0{i + 1}</p>
                 <p className="mt-1 text-sm font-semibold text-[#1f2724]">
                   {item.title}
                 </p>
@@ -218,6 +232,168 @@ export default function AttunePage() {
         </div>
       </Section>
 
+      <Chapter title="Prototyping" />
+
+      <Section title="Low fidelity">
+        <Prose>
+          <p>
+            We started on paper, sketching the four tabs of the app and
+            annotating every open question as we went.
+          </p>
+        </Prose>
+        <div className="overflow-hidden rounded-2xl bg-white p-2">
+          <Figure
+            src="/case-studies/attune/lofi-home-heatmap.jpg"
+            alt="Hand-drawn sketches of the home screen and the heatmap screen with annotations"
+            width={1313}
+            height={624}
+          />
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div className="space-y-2">
+            <SubHeading>Home</SubHeading>
+            <Prose>
+              <p>
+                Details for your next engagement up top, a graph of positive
+                interactions (possibly a mini heatmap), and recommended tips
+                and wikis to help you better understand nunchi. We flagged the
+                settings icon as important: it controls how users want
+                notifications and feedback, and which &ldquo;sensors&rdquo;
+                ATTUNE should use.
+              </p>
+            </Prose>
+          </div>
+          <div className="space-y-2">
+            <SubHeading>Heatmap</SubHeading>
+            <Prose>
+              <p>
+                The first heatmap was a free-form visualization with a marker
+                showing where you are relative to everyone else. An icon in
+                the corner controls voice support, and below the map sit quick
+                insights: easy tips and tricks that help in the moment.
+              </p>
+            </Prose>
+          </div>
+        </div>
+        <div className="overflow-hidden rounded-2xl bg-white p-2">
+          <Figure
+            src="/case-studies/attune/lofi-activities-profile.jpg"
+            alt="Hand-drawn sketches of the activities screen with two gradient ideas, and the profile screen"
+            width={1133}
+            height={850}
+          />
+        </div>
+        <div className="grid gap-6 sm:grid-cols-2">
+          <div className="space-y-2">
+            <SubHeading>Activities</SubHeading>
+            <Prose>
+              <p>
+                A plus button to add an activity and a list of current ones.
+                We sketched two ideas for summarizing each activity: a series
+                of colored lines, or a smooth calm-to-tense gradient with a bar
+                marking the intention you set.
+              </p>
+            </Prose>
+          </div>
+          <div className="space-y-2">
+            <SubHeading>Profile</SubHeading>
+            <Prose>
+              <p>
+                Name, bio, recent activities, and a status graph. The big
+                question here was what information would actually be
+                relevant: positive and negative interactions, the number of
+                interactions, or a summary of the day.
+              </p>
+            </Prose>
+          </div>
+        </div>
+      </Section>
+
+      <Section title="Mid fidelity">
+        <Prose>
+          <p>
+            In Figma, the sketches became a connected flow. Before a
+            conversation, you <strong>start a new activity</strong>: name it,
+            choose an intention (like a discussion, an interview or a coffee
+            chat), and add participants. The home screen greets you with your
+            next interaction, a week of insights, and recommended tips like
+            &ldquo;Instilling Trust&rdquo; and &ldquo;Finding Intent.&rdquo;
+            Settings let you choose whether ATTUNE is allowed to record
+            conversations at all.
+          </p>
+        </Prose>
+        <div className="overflow-hidden rounded-2xl bg-[#1e1e1e] p-3">
+          <Figure
+            src="/case-studies/attune/mid-flow.jpg"
+            alt="Mid fidelity screens: start a new activity, profile, home with insights and recommendations, a tip popup, and settings"
+            width={581}
+            height={306}
+          />
+        </div>
+        <div className="grid items-center gap-6 sm:grid-cols-[1fr_1.1fr]">
+          <Prose>
+            <p>
+              During an activity, the heatmap turned into a grid that moves
+              from green to red, with numbered markers for each participant
+              and quick insights underneath. Tapping the speaker icon opens
+              voice recording, and ending the activity asks you to{" "}
+              <strong>rate the interaction</strong>, closing the loop between
+              what ATTUNE sensed and how the conversation felt to you.
+            </p>
+          </Prose>
+          <div className="overflow-hidden rounded-2xl bg-[#1e1e1e] p-3">
+            <Figure
+              src="/case-studies/attune/mid-heatmap.jpg"
+              alt="Mid fidelity heatmap screens with quick insights, a voice recording popup, and a rate the interaction popup"
+              width={354}
+              height={260}
+              sizes="(min-width: 640px) 330px, 100vw"
+            />
+          </div>
+        </div>
+      </Section>
+
+      <Section title="Style guide">
+        <Prose>
+          <p>
+            To move into high fidelity, we pulled the visual language into a
+            small style guide: the ATTUNE logotype on our signature blue,{" "}
+            <strong>Raleway</strong> for headings and{" "}
+            <strong>Inter</strong> for everything else, a calm primary palette
+            of blue, sage and off-white, and a heatmap scale that runs from
+            mint to coral. Charcoal primary buttons and sage cards and
+            secondary buttons keep the interface quiet, so the heatmap can be
+            the loudest thing on screen.
+          </p>
+        </Prose>
+        <div className="grid grid-cols-[1fr_1fr] items-start gap-3 rounded-2xl bg-[#1e1e1e] p-3 sm:grid-cols-[1fr_1fr_0.55fr]">
+          <Figure
+            src="/case-studies/attune/style-guide.jpg"
+            alt="Style guide with logotype, typography scale, color palette and icons"
+            width={200}
+            height={554}
+            sizes="(min-width: 640px) 240px, 50vw"
+          />
+          <Figure
+            src="/case-studies/attune/components.jpg"
+            alt="Component sheet with primary and secondary buttons, input, checkbox and card"
+            width={200}
+            height={425}
+            sizes="(min-width: 640px) 240px, 50vw"
+          />
+          <Figure
+            src="/case-studies/attune/palette.jpg"
+            alt="Heatmap color scale from mint through yellow and peach to coral"
+            width={110}
+            height={109}
+            sizes="130px"
+            className="col-span-2 mx-auto w-24 sm:col-span-1 sm:w-full"
+          />
+        </div>
+      </Section>
+
+      <Chapter title="High Fidelity" />
+
       <Section title="Key feature: the heatmap">
         <div className="grid items-start gap-6 sm:grid-cols-[1fr_240px]">
           <Prose>
@@ -257,6 +433,35 @@ export default function AttunePage() {
           </Slide>
         </div>
       </Section>
+
+      {PROTOTYPE_URL && (
+        <Section title="Try the prototype">
+          <Prose>
+            <p>
+              The high fidelity prototype was built in Figma Make. Tap
+              through it below, or{" "}
+              <a
+                href={PROTOTYPE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                open it in a new tab
+              </a>
+              .
+            </p>
+          </Prose>
+          <div className="mx-auto w-full max-w-[380px] rounded-[2.75rem] bg-[#1f2724] p-3 shadow-lg">
+            <iframe
+              src={PROTOTYPE_URL}
+              title="ATTUNE interactive prototype"
+              className="aspect-[9/19.5] w-full rounded-[2.1rem] bg-white"
+              loading="lazy"
+              allowFullScreen
+            />
+          </div>
+        </Section>
+      )}
 
       <Section title="Safeguards & privacy">
         <div className="grid items-center gap-6 sm:grid-cols-[1fr_240px]">
