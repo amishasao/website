@@ -34,10 +34,10 @@ const SPAN: Record<Span, string> = {
 };
 
 const SIZES: Record<Span, string> = {
-  wide: "(min-width: 640px) 420px, 100vw",
-  narrow: "(min-width: 640px) 200px, 100vw",
-  half: "(min-width: 640px) 310px, 100vw",
-  full: "(min-width: 640px) 624px, 100vw",
+  wide: "(min-width: 640px) 480px, 100vw",
+  narrow: "(min-width: 640px) 240px, 100vw",
+  half: "(min-width: 640px) 360px, 100vw",
+  full: "(min-width: 640px) 720px, 100vw",
 };
 
 // Row span comes from a CSS variable so it can follow the content

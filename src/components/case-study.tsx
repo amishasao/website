@@ -130,7 +130,7 @@ export function Figure({
   caption,
   className,
   imageClassName,
-  sizes = "(min-width: 672px) 624px, 100vw",
+  sizes = "(min-width: 768px) 720px, 100vw",
   priority,
 }: {
   src: string;
