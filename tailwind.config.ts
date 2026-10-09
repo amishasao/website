@@ -29,6 +29,9 @@ const config = {
         portfolio: {
           slate: "#567087",
           gold: "#e6cc8c",
+          sage: "#f4f5e7",
+          // Coral is a little deeper in light mode so it holds up on cream
+          coral: "rgb(var(--coral) / <alpha-value>)",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

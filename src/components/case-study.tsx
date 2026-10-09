@@ -1,5 +1,9 @@
 import BlurFade from "@/components/magicui/blur-fade";
-import { CASE_STUDIES, type CaseStudy } from "@/data/case-studies";
+import {
+  CASE_STUDIES,
+  caseStudyHref,
+  type CaseStudy,
+} from "@/data/case-studies";
 import { cn } from "@/lib/utils";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
@@ -37,7 +41,7 @@ export function CaseStudyHeader({
     <header className="flex flex-col gap-6">
       <BlurFade>
         <Link
-          href="/#projects"
+          href="/#work"
           className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground"
         >
           <ArrowLeft className="size-3.5" />
@@ -61,6 +65,10 @@ export function CaseStudyHeader({
               <dd className="mt-1 text-sm">{item.value}</dd>
             </div>
           ))}
+          <div className="col-span-2 sm:col-span-4">
+            <dt className="text-xs text-muted-foreground">Outcome</dt>
+            <dd className="mt-1 text-sm">{study.outcome}</dd>
+          </div>
         </dl>
       </BlurFade>
     </header>
@@ -179,7 +187,7 @@ export function CaseStudyFooter({
           <ArrowUpRight className="size-3.5" />
         </Link>
         <Link
-          href={`/blog/${next.slug}`}
+          href={caseStudyHref(next.slug)}
           className="inline-flex items-center gap-1 hover:underline"
         >
           Next: {next.title.split(":")[0]}

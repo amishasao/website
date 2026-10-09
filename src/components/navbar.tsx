@@ -38,7 +38,7 @@ export default function Navbar() {
                   onClick={item.href === "/" ? handleHomeClick : undefined}
                   className={cn(
                     buttonVariants({ variant: "ghost", size: "icon" }),
-                    "size-12 text-portfolio-gold hover:bg-white/10 hover:text-portfolio-gold"
+                    "size-10 text-portfolio-gold hover:bg-white/10 hover:text-portfolio-gold sm:size-12"
                   )}
                 >
                   <item.icon className="size-4" />
@@ -61,7 +61,7 @@ export default function Navbar() {
                     href={social.url}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12 text-portfolio-gold hover:bg-white/10 hover:text-portfolio-gold"
+                      "size-10 text-portfolio-gold hover:bg-white/10 hover:text-portfolio-gold sm:size-12"
                     )}
                   >
                     <social.icon className="size-4" />

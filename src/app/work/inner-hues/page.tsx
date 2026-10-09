@@ -114,9 +114,9 @@ export default function InnerHuesPage() {
           />
         }
         meta={[
-          { label: "Program", value: "Bits of Good Design Bootcamp" },
+          { label: "Role", value: study.role },
+          { label: "Team", value: "Side by side with Ritsu Ueda" },
           { label: "Timeline", value: study.dates },
-          { label: "Team", value: "Amisha Sao & Ritsu Ueda" },
           { label: "Methods", value: "Surveys, interviews, usability testing" },
         ]}
       />

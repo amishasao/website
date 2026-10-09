@@ -7,6 +7,7 @@ interface Props {
   description: string;
   dates: string;
   location: string;
+  role?: string;
   image?: string;
   links?: readonly {
     icon: React.ReactNode;
@@ -20,6 +21,7 @@ export function HackathonCard({
   description,
   dates,
   location,
+  role,
   image,
   links,
 }: Props) {
@@ -37,7 +39,9 @@ export function HackathonCard({
         )}
         <h2 className="font-semibold leading-none">{title}</h2>
         {location && (
-          <p className="text-sm text-muted-foreground">{location}</p>
+          <p className="text-sm text-muted-foreground">
+            {[location, role].filter(Boolean).join(" · ")}
+          </p>
         )}
         {description && (
           <span className="prose dark:prose-invert text-sm text-muted-foreground">

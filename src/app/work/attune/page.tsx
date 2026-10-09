@@ -69,10 +69,10 @@ export default function AttunePage() {
           </div>
         }
         meta={[
+          { label: "Role", value: study.role },
+          { label: "Team", value: "Side by side with Ritsu Ueda" },
           { label: "Event", value: "FigBuild 2026" },
           { label: "Timeline", value: study.dates },
-          { label: "Team", value: "Amisha Sao & Ritsu Ueda" },
-          { label: "Focus", value: "Product & interaction design" },
         ]}
       />
 
@@ -497,6 +497,43 @@ export default function AttunePage() {
             className="mx-auto w-52 sm:w-full"
           />
         </div>
+      </Section>
+
+      <Section title="What happened next">
+        <Prose>
+          <p>
+            We presented ATTUNE at <strong>FigBuild 2026</strong> and
+            gathered feedback from other designers during the popular vote.
+            I&apos;ve taken that feedback with me, and it now shapes how I
+            approach my newer projects.
+          </p>
+        </Prose>
+      </Section>
+
+      <Section title="Reflection">
+        <Prose>
+          <ul>
+            <li>
+              <strong>Privacy was the feature.</strong> An app that listens
+              only works if people trust it. Deciding early on opt-in
+              recording, and on tracking emotional state rather than what was
+              said, is what made the heatmap something people would actually
+              agree to use.
+            </li>
+            <li>
+              <strong>Simple can be too simple.</strong> Calm versus tense is
+              easy to read at a glance, but real conversations are more
+              nuanced. Next, I&apos;d test whether a two-ended scale helps
+              people or flattens what they&apos;re sensing.
+            </li>
+            <li>
+              <strong>The glance matters most.</strong> The hardest question
+              is one we couldn&apos;t test during FigBuild: can someone check the
+              screen mid-conversation without breaking eye contact? I&apos;d
+              prototype haptic or ambient cues next.
+            </li>
+          </ul>
+        </Prose>
       </Section>
 
       <Slide className="flex flex-col items-center gap-2 px-6 py-12 text-center text-[#1f2724]">

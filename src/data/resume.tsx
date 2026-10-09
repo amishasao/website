@@ -1,13 +1,11 @@
 import { Icons } from "@/components/icons";
-import { url } from "inspector";
 import {
-  CodeIcon,
+  GraduationCap,
   HomeIcon,
-  icons,
-  NotebookIcon,
+  Briefcase,
+  Mail,
   Rocket,
 } from "lucide-react";
-import { title } from "process";
 
 export const DATA = {
   name: "Amisha Sao",
@@ -16,10 +14,12 @@ export const DATA = {
   location: "Austin, TX",
   locationLink: "https://www.google.com/maps/place/austin",
   description:
-    "Software Engineer turned Product Designer, currently interning as a Software Engineer at Adobe. I build practical, technical products that empower people to tell their own stories. I'm pivoting toward design engineering, bridging the gap between design and code. Connect with me on LinkedIn and GitHub!",
+    "I design products in Figma and build them in React. CS + HCI at Georgia Tech, most recently a Software Engineering Intern at Adobe.",
   summary:
-    "I'm a software engineer turned product designer, currently studying Computer Science at Georgia Institute of Technology. I've spent years building technical systems — from open-source research computing tools to AI-powered products. I'm now bringing that same rigor into product design, with the goal of becoming a design engineer: someone who can move fluidly between Figma and code, and who designs with an understanding of what's actually buildable.\n\nRight now, I'm interning at Adobe, where I work closely with designers to implement frontend changes — an experience that's taught me exactly what survives the handoff from design file to production, and sharpened my instinct for where design and engineering decisions actually meet.\n\nMy path here has included some unconventional turns: I was named a US Presidential Scholar in 2024 and published research in IEEE Xplore on neuromuscular robotic rehabilitation. I've also led and organized hackathons at scale — including HackGT 12, Georgia Tech's largest student-run hackathon with over 1,200 participants — and founded the first in-person hackathon in my hometown from scratch.\n\nWhat ties all of this together is the same thread I care about as a design engineer: building products and experiences that are practical, technically sound, and genuinely empower the people who use them to tell their own stories. Connect with me on LinkedIn and GitHub to see more of what I'm working on.",
+    "I'm a design engineer studying Computer Science with a focus in HCI at Georgia Tech. I've spent years building technical systems, from open-source research computing tools to AI-powered products, and I bring that same rigor to product design. I move fluidly between Figma and code, and I design with an understanding of what's actually buildable.\n\nThis summer I interned at Adobe on Marketo Engage's AI tools, working closely with designers to ship frontend changes. It taught me exactly what survives the handoff from design file to production, and where design and engineering decisions actually meet.\n\nMy path here has taken some unconventional turns. I was named a US Presidential Scholar in 2024 and published research in IEEE Xplore on neuromuscular robotic rehabilitation. I led the tech team for HackGT 13, Georgia Tech's largest hackathon, and founded the first in-person hackathon in my hometown from scratch.\n\nWhat ties it all together: I build products that are practical, technically sound, and that empower the people who use them to tell their own stories.",
   avatarUrl: "/LinkedIn2.jpg",
+  resumeUrl:
+    "https://drive.google.com/file/d/1uOTUlQeNJ0TKbHHY2Dmt0053s6f0b7Kk/view?usp=drive_link",
   skills: [
     // Design
     "User Research",
@@ -51,9 +51,10 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
-    { href: "/#projects", icon: CodeIcon, label: "Projects" },
+    { href: "/#work", icon: Briefcase, label: "Work" },
+    { href: "/#background", icon: GraduationCap, label: "Education & Skills" },
     { href: "/#hackathons", icon: Rocket, label: "Hackathons" },
+    { href: "/#contact", icon: Mail, label: "Contact" },
   ],
   contact: {
     email: "asao6@gatech.edu",
@@ -80,7 +81,7 @@ export const DATA = {
       },
       email: {
         name: "Send Email",
-        url: "mintysao@gmail.com",
+        url: "mailto:asao6@gatech.edu",
         icon: Icons.email,
 
         navbar: false,
@@ -94,7 +95,7 @@ export const DATA = {
       href: "https://hexlabs.org/",
       badges: [],
       location: "Atlanta, Georgia",
-      title: "Design Engineer",
+      title: "Tech Team Director",
       logoUrl: "/hexlabs.jpg",
       start: "November 2024",
       end: "Current",
@@ -149,68 +150,10 @@ export const DATA = {
     },
   ],
   projects: [
-    {
-      title: "Inner Hues",
-      href: "/blog/inner-hues",
-      dates: "Jan 2026 - Apr 2026",
-      active: true,
-      description:
-        "A judgment-free digital art space designed to make creative self-care feel more approachable. Led user research through 15 survey responses and 4 interviews, uncovering barriers around time and confidence, choice overload, and fear of judgment. Mapped 5 competitor apps and iterated low-to-mid-fidelity Figma prototypes based on usability testing to improve navigation and guidance clarity.",
-      technologies: [
-        "Figma",
-        "User Research",
-        "Usability Testing",
-        "Competitive Analysis",
-        "Prototyping",
-        "Information Architecture",
-      ],
-      links: [],
-      image: "/inner-hues.png",
-    },
-    {
-      title: "ATTUNE",
-      href: "/blog/attune",
-      dates: "March 2026",
-      active: true,
-      description:
-        "A real-time conversational awareness app inspired by the Korean concept of nunchi. Designed an experience that translates emotional cues into a live heatmap and quick-insights panel, with privacy-by-design through opt-in, active-session-only voice recording and analysis focused on emotional state rather than transcript content.",
-      technologies: [
-        "Figma",
-        "Product Design",
-        "Interaction Design",
-        "Privacy by Design",
-        "AI",
-      ],
-      links: [],
-      image: "/attune.png",
-    },
-    {
-      title: "HackGT 13 Website",
-      href: "/blog/hackgt-13",
-      dates: "2026",
-      active: true,
-      description:
-        "Helped design and build the website for HackGT 13, Georgia Tech's premier hackathon, creating an approachable application experience for students from all backgrounds. Owned the information architecture, mid-to-high fidelity prototyping, and seaside-market visual concept from initial sketches through launch, then brought the designs to life as a fully responsive React and TypeScript website.",
-      technologies: [
-        "Figma",
-        "React",
-        "TypeScript",
-        "Information Architecture",
-        "Prototyping",
-        "Responsive Design",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://hack.gt/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/hackgt13website.png",
-    },
-
+    // Case studies live in case-studies.ts; these are the "other work" tiles
     {
       title: "MedEase: AI-Assisted Diagnostic Workflow",
+      tagline: "AI diagnostics · Best Use of MongoDB",
       href: "https://github.com/amishasao/Scan-Desu-Ne",
       dates: "September - October 2024",
       active: true,
@@ -240,6 +183,7 @@ export const DATA = {
     },
     {
       title: "Robosense",
+      tagline: "Rehab glove · IEEE Xplore",
       href: "https://projectboard.world/isef/project/ebed009-robosense",
       dates: "Jan 2024 - Feb 2024",
       active: true,
@@ -275,6 +219,7 @@ export const DATA = {
     },
     {
       title: "Educational Website Research",
+      tagline: "HCI study · 40+ responses",
       href: "https://amishasao.github.io/hci-research-user-testing/",
       dates: "Aug 2023 - May 2024",
       active: true,
@@ -295,7 +240,7 @@ export const DATA = {
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/amishasao/hci-research-user-testing",
           icon: <Icons.github className="size-3" />,
         },
         {
@@ -312,10 +257,12 @@ export const DATA = {
   hackathons: [
     {
       title: "HackGT 13",
+      role: "Organizer",
+      featured: true,
       dates: "September 25th - 27th, 2026",
       location: "Atlanta, Georgia",
       description:
-        "As Tech Team director, I helped organize HackGT 13, Georgia Tech's premier hackathon, creating an approachable application experience for students from all backgrounds. I owned the information architecture, mid-to-high fidelity prototyping, and seaside-market visual concept from initial sketches through launch, then brought the designs to life as a fully responsive React and TypeScript website. I pioneered the creation of a new HexLabs app for the event, which allowed students to view the schedule, workshops, and other event information in a mobile-friendly format.",
+        "As Tech Team Director, I helped organize HackGT 13, Georgia Tech's premier hackathon, creating an approachable application experience for students from all backgrounds. I owned the information architecture, mid-to-high fidelity prototyping, and seaside-market visual concept from initial sketches through launch, then brought the designs to life as a fully responsive React and TypeScript website. I pioneered the creation of a new HexLabs app for the event, which allowed students to view the schedule, workshops, and other event information in a mobile-friendly format.",
       image: "/hackgt13.svg",
       links: [
         {
@@ -332,6 +279,7 @@ export const DATA = {
     },
     {
       title: "SproutGT",
+      role: "Organizer",
       dates: "April 10th - 11th, 2026",
       location: "Atlanta, Georgia",
       description:
@@ -352,10 +300,11 @@ export const DATA = {
     },
     {
       title: "HackGT 12",
+      role: "Organizer",
       dates: "September 26th - 28th, 2025",
       location: "Atlanta, Georgia",
       description:
-        "Helped organize SproutGT, a start-up pitch-a-thon and design-a-thon for over 250 Georgia Tech students. Contributed to the event's digital experience and technical infrastructure while working with the HexLabs team to bring the event from planning to execution.",
+        "As a Tech Team general member, helped build the HackGT 12 website in React, TypeScript and Chakra UI for Georgia Tech's 36-hour hackathon, which brought together 1,200+ hackers.",
       image: "/hackgt12.png",
       links: [
         {
@@ -372,6 +321,7 @@ export const DATA = {
     },
     {
       title: "HackGTeeny 2025",
+      role: "Organizer",
       dates: "March 1st, 2025",
       location: "Atlanta, Georgia",
       description:
@@ -387,6 +337,8 @@ export const DATA = {
     },
     {
       title: "HackGT 11",
+      role: "Builder",
+      featured: true,
       dates: "September 27th - 29th, 2024",
       location: "Atlanta, Georgia",
       description:
@@ -423,6 +375,8 @@ export const DATA = {
     },
     {
       title: "HackMIT",
+      role: "Builder",
+      featured: true,
       dates: "September 14th - 15th, 2024",
       location: "Cambridge, Massachusetts",
       description:
@@ -449,6 +403,7 @@ export const DATA = {
     },
     {
       title: "Outernet",
+      role: "Builder",
       dates: "July 28th - 31st, 2023",
       location: "Cabot, Vermont",
       description:
@@ -466,6 +421,8 @@ export const DATA = {
     },
     {
       title: "Rock Hacks",
+      role: "Organizer",
+      featured: true,
       dates: "November 11th - 13th, 2022",
       location: "Round Rock, Texas",
       description:
@@ -487,21 +444,17 @@ export const DATA = {
     },
     {
       title: "AutumnHacks 2022",
+      role: "Builder",
       dates: "September 10th - 12th, 2022",
       location: "Online",
       description:
         "Developed a cross-platform app in React Native, which tracks personal health data and provides useful insights.",
       image: "/autumnhacks.png",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
-        },
-      ],
+      links: [],
     },
     {
       title: "Assemble",
+      role: "Builder",
       dates: "August 5th - 8th, 2022",
       location: "San Francisco, California",
       description:
@@ -519,6 +472,7 @@ export const DATA = {
     },
     {
       title: "Mbrlla Hacks",
+      role: "Organizer",
       dates: "August 1st, 2022 - Ongoing",
       location: "Online",
       description:
@@ -534,6 +488,7 @@ export const DATA = {
     },
     {
       title: "HackJA Spring 2021",
+      role: "Builder",
       dates: "June 5th - 6th, 2021",
       location: "Online",
       description:

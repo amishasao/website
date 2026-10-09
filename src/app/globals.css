@@ -4,7 +4,8 @@
 
 /*
  * Palette borrowed from the Design Portfolio:
- *   plum #2d2a31 / charcoal #434047, slate #567087, gold #e6cc8c, cream #faf6ec
+ *   plum #2d2a31 / charcoal #434047, slate #567087, gold #e6cc8c, cream #faf6ec,
+ *   coral #ff7961, sage #f4f5e7
  */
 @layer base {
     :root {
@@ -37,6 +38,8 @@
       --ring: 208 22.2% 43.3%;
 
       --radius: 1.25rem;
+
+      --coral: 232 96 74;
     }
 
     .dark {
@@ -67,6 +70,8 @@
       --border: 267 5.1% 34.3%;
       --input: 267 5.1% 34.3%;
       --ring: 43 64.3% 72.5%;
+
+      --coral: 255 121 97;
     }
   }
 
@@ -165,7 +170,23 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 /*
  * Case study themes, each borrowed from its original presentation deck.
  * Panels keep the deck's fixed colors; headings get a lighter tone in dark mode.
+ * New case studies can start from .cs-default (the site's own palette) and get
+ * their own theme block later.
  */
+.cs-default {
+  --cs-heading: #2d2a31;
+  --cs-accent: #e8604a;
+  --cs-panel: #f4f5e7;
+}
+.dark .cs-default {
+  --cs-heading: #faf6ec;
+  --cs-accent: #ff7961;
+}
+.cs-default .cs-h2 {
+  font-family: var(--font-heading), var(--font-sans), sans-serif;
+  font-weight: 700;
+}
+
 .cs-attune {
   --cs-heading: #1f2724;
   --cs-accent: #7ea8b8;

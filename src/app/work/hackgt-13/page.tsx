@@ -51,7 +51,7 @@ export default function HackGTPage() {
           />
         }
         meta={[
-          { label: "Role", value: "Design Engineering Director" },
+          { label: "Role", value: study.role },
           { label: "Organization", value: "HexLabs" },
           { label: "Timeline", value: study.dates },
           { label: "Tools", value: "Figma, React, TypeScript" },
@@ -70,9 +70,9 @@ export default function HackGTPage() {
               and lots of swag.
             </p>
             <p>
-              This year, I worked as a <strong>design engineering director</strong>,
-              designing the website and leading the software engineers who
-              built it. The site went on to attract thousands of applicants.
+              This year, I was the <strong>design engineer</strong> for the
+              website. I designed it and led the software engineers who built
+              it. The site went on to attract thousands of applicants.
             </p>
           </Prose>
           <Figure
@@ -203,45 +203,84 @@ export default function HackGTPage() {
 
       <Chapter title="Iteration 1 & Design Decisions" />
 
-      <Section title="Current problems">
+      <Section title="Problems and fixes">
         <Prose>
           <p>
             Once the first full design came together, two problems stood out.
+            Here&apos;s how we fixed each one.
           </p>
         </Prose>
-        <div className="grid gap-6 sm:grid-cols-2">
-          {[
-            {
-              title: "Section transitions",
-              text: "There was a transition between each section, but some of them felt rough. And the more sketch-like a transition was, the harder it was to implement perfectly in code.",
+        {[
+          {
+            title: "Section transitions",
+            problem:
+              "There was a transition between each section, but some of them felt rough. And the more sketch-like a transition was, the harder it was to implement perfectly in code.",
+            fix: "We redrew the beach-to-ocean transition as one smooth wave. It no longer competes with the text, it strengthens the seaside theme, and the sand and water now make a clean backdrop for the sponsor logos.",
+            before: {
               src: "/case-studies/hackgt13/problem-transitions.jpg",
-              alt: "Sponsors section with a hard horizontal water transition",
+              alt: "Before: sponsors section with a hard horizontal water transition",
+              width: 1401,
+              height: 807,
             },
-            {
-              title: "Themed illustrations",
-              text: "Many illustrations were about groceries and fresh produce in general rather than a seaside market. They felt out of place next to fish and other things you'd actually expect at a seaside market.",
+            after: {
+              src: "/case-studies/hackgt13/after-transitions.png",
+              alt: "After: sponsor logos on sand with a smooth wave washing into the ocean, framed by starfish and a shell",
+              width: 2634,
+              height: 1432,
+            },
+          },
+          {
+            title: "Themed illustrations",
+            problem:
+              "Many illustrations were about groceries and fresh produce in general rather than a seaside market. They felt out of place next to fish and other things you'd actually expect at a seaside market.",
+            fix: "We rebuilt the illustrations around a seaside market stall, with a crate of fresh fish, a vendor's scale and a chalkboard sign announcing registration, so every piece matches the theme and adds to the overall look.",
+            before: {
               src: "/case-studies/hackgt13/problem-illustrations.jpg",
-              alt: "Fresh produce illustration with a wheelbarrow of vegetables",
+              alt: "Before: fresh produce illustration with a wheelbarrow of vegetables",
+              width: 1401,
+              height: 807,
             },
-          ].map((item) => (
-            <div key={item.title} className="flex flex-col gap-3">
-              <div className="rounded-xl bg-[color:var(--cs-wood)] p-2">
-                <Figure
-                  src={item.src}
-                  alt={item.alt}
-                  width={1401}
-                  height={807}
-                  sizes="(min-width: 640px) 300px, 100vw"
-                  imageClassName="rounded-md"
-                />
-              </div>
-              <SubHeading>{item.title}</SubHeading>
-              <Prose>
-                <p>{item.text}</p>
-              </Prose>
+            after: {
+              src: "/case-studies/hackgt13/after-illustrations.png",
+              alt: "After: a seaside market stall with a crate of fish, a scale and a fruit crate, beside a chalkboard sign reading Registration open until Sept 11",
+              width: 1126,
+              height: 742,
+            },
+          },
+        ].map((item) => (
+          <div key={item.title} className="flex flex-col gap-3">
+            <SubHeading>{item.title}</SubHeading>
+            <div className="grid items-start gap-3 sm:grid-cols-2">
+              {[
+                { label: "Before", image: item.before },
+                { label: "After", image: item.after },
+              ].map(({ label, image }) => (
+                <div
+                  key={label}
+                  className="rounded-xl bg-[color:var(--cs-wood)] p-2"
+                >
+                  <Figure
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    sizes="(min-width: 640px) 300px, 100vw"
+                    imageClassName="rounded-md"
+                  />
+                  <p className="mt-1.5 text-center text-xs text-[#fff3e4]">
+                    {label}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+            <Prose>
+              <p>{item.problem}</p>
+              <p>
+                <strong>What we changed:</strong> {item.fix}
+              </p>
+            </Prose>
+          </div>
+        ))}
       </Section>
 
       <Chapter title="Final High-Fidelity Design" />
