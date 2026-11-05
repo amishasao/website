@@ -10,6 +10,7 @@ import {
 } from "@/components/case-study";
 import { fontInstrument } from "@/components/case-study-fonts";
 import { FigmaPhoneEmbed } from "@/components/figma-phone-embed";
+import { FlipCard } from "@/components/flip-card";
 import { getCaseStudy } from "@/data/case-studies";
 import { cn } from "@/lib/utils";
 
@@ -256,39 +257,69 @@ export default function InnerHuesPage() {
               alt: "Illustration of a person beside a lightbulb and a ringing clock",
               h: 1150,
               title: "Lack of time & confidence",
-              text: "These were the top two barriers across both the survey and the interviews.",
+              text: "The top two barriers in the survey: lack of time (11/15) and lack of confidence (8/15). Yet interest in starting new art averaged 3.7/5.",
+              quote:
+                "You know how to do it and you know what to do, but it's just you can't get it right, so you just give up.",
+              speaker: "P1",
             },
             {
               src: "/case-studies/inner-hues/finding-options.jpg",
               alt: "Illustration of a person sitting cross-legged under a burst of ideas",
               h: 1199,
               title: "Too many options are overwhelming",
-              text: "Having too many ideas, or none at all, is stressful and blocks creativity.",
+              text: "Having too many ideas, or none at all, is stressful. 8/15 respondents wanted clear step-by-step instructions.",
+              quote:
+                "Sometimes if I'm struggling, I just open something that's like MS Paint.",
+              speaker: "P4",
             },
             {
               src: "/case-studies/inner-hues/finding-community.jpg",
               alt: "Illustration of a diverse group of people standing together",
               h: 1313,
               title: "Supportive community without critiques",
-              text: "Interviewees said art should be a judgment-free activity that values the process over the product.",
+              text: "10/15 respondents wanted a supportive community, and interviewees said critiques drained their motivation.",
+              quote:
+                "After finishing an artwork, I think “I really like this art piece that I made” but when it comes to critiques and getting grades back, it's like “Oh, I guess not.”",
+              speaker: "P2",
             },
           ].map((item) => (
-            <Panel key={item.src} className="flex flex-col gap-3">
-              <Figure
-                src={item.src}
-                alt={item.alt}
-                width={1401}
-                height={item.h}
-                sizes="(min-width: 640px) 200px, 100vw"
-                className="mx-auto w-40 sm:w-full"
-              />
-              <p className="text-sm font-semibold text-[#2d2a31]">
-                {item.title}
-              </p>
-              <p className="text-sm leading-6 text-[#2d2a31]/75">{item.text}</p>
-            </Panel>
+            <FlipCard
+              key={item.src}
+              label={`${item.title}: show a participant quote`}
+              faceClassName="flex flex-col gap-3 rounded-2xl bg-[color:var(--cs-panel)] p-4"
+              backClassName="bg-[color:var(--cs-quote)]"
+              front={
+                <>
+                  <Figure
+                    src={item.src}
+                    alt={item.alt}
+                    width={1401}
+                    height={item.h}
+                    sizes="(min-width: 640px) 200px, 100vw"
+                    className="mx-auto w-40 sm:w-full"
+                  />
+                  <p className="text-sm font-semibold text-[#2d2a31]">
+                    {item.title}
+                  </p>
+                  <p className="text-sm leading-6 text-[#2d2a31]/75">
+                    {item.text}
+                  </p>
+                </>
+              }
+              back={
+                <blockquote className="my-auto space-y-3">
+                  <p className="font-[family-name:var(--font-instrument)] text-xl italic leading-snug text-white">
+                    &ldquo;{item.quote}&rdquo;
+                  </p>
+                  <p className="text-sm text-white/85">{item.speaker}</p>
+                </blockquote>
+              }
+            />
           ))}
         </div>
+        <p className="text-sm text-muted-foreground">
+          Tap a card to hear from a participant.
+        </p>
       </Section>
 
       <Section title="Design recommendations">

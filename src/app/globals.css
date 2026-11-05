@@ -206,6 +206,8 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
   --cs-heading: #2d2a31;
   --cs-accent: #e8664a;
   --cs-panel: #f3f1e6;
+  /* Purple from the Storyset finding illustrations */
+  --cs-quote: #c06eae;
   --cs-gradient: radial-gradient(ellipse at 12% 40%, #f39a5b 0%, transparent 55%),
     radial-gradient(ellipse at 85% 30%, #e86fb0 0%, transparent 55%),
     radial-gradient(ellipse at 55% 110%, #8f78c9 0%, transparent 60%),
